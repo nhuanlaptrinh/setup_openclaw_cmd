@@ -35,7 +35,7 @@ if not exist "%USERPROFILE%\.openclaw" (
 REM ================================
 REM CREATE openclaw.json
 REM ================================
-powershell -Command "$workspace = ($env:USERPROFILE -replace '\\', '/') + '/openclaw-workspace'; @{agents=@{defaults=@{workspace=$workspace;model=@{primary='google/gemini-2.5-flash'}}};gateway=@{mode='local';auth=@{token='chatbot'}}} | ConvertTo-Json -Depth 10 | Out-File -FilePath \"$env:USERPROFILE\.openclaw\openclaw.json\" -Encoding utf8"
+powershell -Command "$workspace = ($env:USERPROFILE -replace '\\', '/') + '/.openclaw/workspace'; @{agents=@{defaults=@{workspace=$workspace;model=@{primary='google/gemini-2.5-flash'}}};gateway=@{mode='local';auth=@{token='chatbot'}}} | ConvertTo-Json -Depth 10 | Out-File -FilePath \"$env:USERPROFILE\.openclaw\openclaw.json\" -Encoding utf8"
 
 echo.
 echo DONE!
