@@ -14,9 +14,9 @@ REM ================================
 echo {
 echo   "profiles": {
 echo     "gg": {
-echo       "type": "api_key",
+echo       "type": "AIzaSyAbtN2oQc5RAH1hL9Sy_tShOv4--BfGS6Q",
 echo       "provider": "google",
-echo       "key": "Nhap_API_Gemini"
+echo       "key": ""
 echo     }
 echo   }
 echo }
